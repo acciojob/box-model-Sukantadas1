@@ -4,10 +4,60 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		/* Reset some default styles for better alignment */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the container */
+.container {
+	display:block;
+    width: 700px; /* Set your desired width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add some padding to the container */
+    background-color: #f0f0f0; /* Background color for the container */
+    border: 2px solid #333; /* Border around the container */
+    overflow: hidden; /* Clear any floated child elements */
+	border-radius:20px;
+}
+
+/* Style for each block */
+.block {
+    width: 10%; /* Set the width of each block */
+    height: 100px; /* Set the height of each block */
+    float: left; /* Float the blocks to the left to arrange them horizontally */
+    margin:10px; /* Add some margin between the blocks */
+    text-align: center; /* Center the text inside each block */
+    line-height: 100px; /* Vertical centering of text */
+    font-size: 10px; /* Font size for the text */
+	border-radius:50%;
+}
+
+/* Different background colors for each block */
+.red {
+    background-color: #F62810;
+}
+
+.green {
+    background-color: #1E8739;
+}
+
+.yellow {
+    background-color: #FCFF33;
+}
+
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <div class="container">
+		   <div class="block green"></div>
+           <div class="block yellow"></div>
+		   <div class="block red"></div>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
